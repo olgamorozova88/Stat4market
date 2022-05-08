@@ -1,0 +1,59 @@
+.main-nav {
+  display: none;
+
+  @media (min-width: $laptop) {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $laptop) {
+    display: flex;
+    margin: 0;
+    margin-top: 27px;
+    margin-left: 8px;
+    padding: 0;
+    list-style: none;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 28px;
+    margin-left: 5px;;
+  }
+}
+
+.main-nav__link {
+  transition: color 0.2s ease-in;
+
+    &:hover {
+      color: $accent-color;
+      transition: color 0.2s ease-in;
+    }
+
+  @media (min-width: $laptop) {
+    padding: 14px 20px;
+    font-size: 18px;
+    line-height: 2;
+    color: inherit;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 20px 25px;
+    font-size: 24px;
+    line-height: 2;
+  }
+}
+
+.main-nav__link-icon {
+  @media (min-width: $laptop) {
+    width: 11px;
+    height: 10px;
+    margin-left: 9px;
+    fill: currentColor;
+    opacity: 0.9;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 7px;
+  }
+}

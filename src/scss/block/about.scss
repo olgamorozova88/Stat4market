@@ -1,0 +1,167 @@
+.about {
+  padding: 64px 0;
+
+  @media (min-width: $tablet) {
+    padding: 36px 0;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 26px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 67px 0;
+  }
+}
+
+.about__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 40px;
+    line-height: 1.6;
+  }
+
+  @media (min-width: $laptop) {
+    max-width: 650px;
+    margin: 0 298px 0 250px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 844px;
+    margin: 0 auto;
+    font-size: 48px;
+    line-height: 1.3;
+  }
+}
+
+.about__content {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+    align-items: center;
+  }
+
+  @media (min-width: $laptop) {
+    width: 995px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1320px;
+    margin: 0 111px 0 113px;
+  }
+}
+
+.about__start {
+  margin-top: 50px;
+
+  @media (min-width: $tablet) {
+    margin-top: 79px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: 86px;
+    column-gap: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 85px;
+  }
+}
+
+.about__start-image {
+  display: block;
+  width: 270px;
+  height: 278px;
+  margin: 0 auto;
+
+  @media (min-width: $laptop) {
+    width: 352px;
+    height: 362px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 456px;
+    height: 469px;
+  }
+}
+
+.about__start-text {
+  margin: 0;
+  margin-top: 30px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 30px;
+  }
+}
+
+.about__nowadays {
+  margin-top: 40px;
+
+  @media (min-width: $tablet) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: $laptop) {
+    column-gap: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    column-gap: 80px;
+  }
+}
+
+.about__nowadays-image {
+  display: block;
+  width: 270px;
+  height: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $laptop) {
+    width: 358px;
+    height: 358px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 474px;
+    height: 474px;
+  }
+}
+
+.about__nowadays-text {
+  margin-top: 32px;
+
+  & p {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+
+      @media (min-width: $tablet) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    grid-area: 1 / 1;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 16px;
+  }
+}

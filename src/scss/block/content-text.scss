@@ -1,0 +1,13 @@
+.content-text {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.8;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 25px;
+  }
+}

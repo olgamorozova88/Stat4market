@@ -1,0 +1,54 @@
+.contacts {
+  display: none;
+
+  @media (min-width: $laptop) {
+    display: block;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: $laptop) {
+    margin-top: 26px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 28px;
+  }
+}
+
+.contacts__phone {
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: $accent-color;
+    transition: color 0.2s ease-in;
+  }
+
+  @media (min-width: $laptop) {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 2;
+    color: inherit;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+  }
+}
+
+.contacts__icon {
+  @media (min-width: $laptop) {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  @media (min-width: $desktop) {
+    width: 19px;
+    height: 19px;
+    margin-right: 15px;
+  }
+}

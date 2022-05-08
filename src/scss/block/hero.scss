@@ -1,0 +1,146 @@
+.hero {
+  position: relative;
+  padding: 23px 0;
+
+  @media (min-width: $tablet) {
+    padding: 29px 0;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 49px 0 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 43px 0;
+  }
+}
+
+.hero__content {
+  @media (min-width: $laptop) {
+    position: relative;
+  }
+}
+
+.hero__title {
+  margin: 0;
+  margin-top: 44px;
+  padding-right: 128px;
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 700;
+
+  @media (min-width: $tablet) {
+    margin-top: 15px;
+    padding-right: 50px;
+    font-size: 46px;
+    line-height: 1.4;
+  }
+  @media (min-width: $laptop) {
+    padding-right: 0;
+    max-width: 711px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 880px;
+    font-size: 56px;
+    line-height: 1.4;
+  }
+}
+
+.hero__image {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  width: 133px;
+  height: 245px;
+
+  @media (min-width: $tablet) {
+    top: 212px;
+    width: 241px;
+    height: 410px;
+  }
+
+  @media (min-width: $laptop) {
+    top: -2px;
+    width: 458px;
+    height: 459px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 620px;
+    height: 604px;
+  }
+}
+
+.hero__price {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: rgba($basic-color, 0.8);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-top: 18px;
+  }
+
+  @media (min-width: $laptop) {
+    max-width: 711px;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 880px;
+    margin-top: 25px;
+  }
+}
+
+.hero__price-icon {
+  width: 17px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.hero__icon {
+  margin-left: 2px;
+  margin-right: 25px;
+
+  @media (min-width: $tablet) {
+    margin-left: 0;
+  }
+}
+
+.hero__text {
+  margin: 0;
+  margin-top: 16px;
+
+  @media (min-width: $tablet) {
+    margin-top: 18px;
+    margin-left: 4px;
+    padding-right: 257px;
+  }
+
+  @media (min-width: $laptop) {
+    max-width: 711px;
+    padding-right: 0;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 862px;
+    margin-top: 16px;
+  }
+
+  & p {
+    margin: 0;
+    margin-top: 11px;
+
+    @media (min-width: $tablet) {
+      margin-top: 15px;
+    }
+  }
+}

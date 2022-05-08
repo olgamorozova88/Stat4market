@@ -1,0 +1,87 @@
+.study {
+  padding: 38px 0;
+
+  @media (min-width: $tablet) {
+    padding: 85px 0;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 114px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 78px 0;
+  }
+}
+
+.study__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 40px;
+    line-height: 1.6;
+  }
+
+  @media (min-width: $laptop) {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 678px;
+    font-size: 48px;
+    line-height: 1.3;
+  }
+}
+
+.study__decor {
+  display: inline-block;
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(264.91deg, $gradient-left 0.73%, $gradient-right 95.85%);
+    border-radius: 5px;
+
+    @media (min-width: $tablet) {
+      height: 6px;
+      margin-top: -4px;
+    }
+
+    @media (min-width: $laptop) {
+      height: 6px;
+      margin-top: 0;
+    }
+  }
+}
+
+.study__slogan {
+  margin: 0;
+  margin-top: 21px;
+  text-align: center;
+
+  @media (min-width: $laptop) {
+    max-width: 685px;
+    margin: 25px auto 0;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 846px;
+  }
+}
+
+.study__features {
+  margin-top: 50px;
+
+  @media (min-width: $tablet) {
+    margin-top: 80px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: 83px;
+  }
+}

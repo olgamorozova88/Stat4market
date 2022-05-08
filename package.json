@@ -1,0 +1,35 @@
+{
+  "name": "stat4market",
+  "version": "1.0.0",
+  "description": "test assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp --production"
+  },
+  "author": "Olga Morozova",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "2.27.9",
+    "del": "6.0.0",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "8.0.0",
+    "gulp-csso": "4.0.1",
+    "gulp-group-css-media-queries": "1.2.2",
+    "gulp-htmlmin": "5.0.1",
+    "gulp-if": "3.0.0",
+    "gulp-imagemin": "7.1.0",
+    "gulp-newer": "1.4.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "5.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-webp": "4.0.1",
+    "sass": "1.51.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ]
+}

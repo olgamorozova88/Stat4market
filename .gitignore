@@ -1,0 +1,6 @@
+.vscode
+node_modules/
+build/
+npm-debug.*
+source/css/*.css
+source/css/*.map

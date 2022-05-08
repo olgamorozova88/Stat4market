@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Lato-Regular.woff2) format("woff2"),
+  url(../fonts/Lato-Semibold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Lato-Medium.woff2) format("woff2"),
+  url(../fonts/Lato-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Lato-Semibold.woff2) format("woff2"),
+  url(../fonts/Lato-Semibold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Lato-Bold.woff2) format("woff2"),
+  url(../fonts/Lato-Bold.woff) format("woff");
+}
+
+*,
+*::after,
+*::before  {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  font-family: "Lato", "Verdana", sans-serif;
+  font-weight: 400;
+  color: $basic-color;
+}
+
+.page__body {
+  margin: 0;
+
+  @media (min-width: $laptop) {
+    background-image: url("../img/bg-circle-laptop.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @supports (background-image: url("../img/bg-circle-laptop.webp")) {
+      background-image: url("../img/bg-circle-laptop.webp");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/bg-circle-desktop.png"), url("../img/bg-right-circle-desktop.png");
+    background-repeat: no-repeat;
+    background-position: left top, right 384px;
+
+    @supports (background-image: url("../img/bg-circle-desktop.webp")) {
+      background-image: url("../img/bg-circle-desktop.webp"), url("../img/bg-right-circle-desktop.webp");
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,50 @@
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 17px 0;
+
+  @media (min-width: $desktop) {
+    padding: 23px 0;
+  }
+}
+
+.header__toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 42px;
+  height: 28px;
+  margin: 22px 0 0 22px;
+  margin-top: 22px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  @media (min-width: $tablet) {
+    margin: 34px 0 0 80px;
+  }
+
+  @media (min-width: $laptop) {
+    display: none;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    height: 4px;
+    border-radius: 4px;
+    background-color: $accent-color;
+  }
+
+  &::after {
+    width: 32px;
+    margin-top: 8px;
+  }
+
+  &::before {
+    width: 42px;
+    box-shadow: 0 -12px 0 0 $accent-color;
+  }
+}

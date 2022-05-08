@@ -1,0 +1,74 @@
+.login__wrapper {
+  margin-top: 18px;
+  margin-left: auto;
+
+  @media (min-width: $tablet) {
+    margin-top: 26px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-left: 93px;
+    margin-top: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 91px;
+    margin-top: 30px;
+  }
+}
+
+.login__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.02em;
+  color: $white;
+  background-color: $accent-color;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: darken($color: $accent-color, $amount: 7);
+    transition: background-color 0.2s ease-in;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 4px 32px;
+    font-size: 20px;
+    line-height: 1.8;
+    border-radius: 12px;
+  }
+
+  @media (min-width: $laptop) {
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 11px 32px;
+    font-size: 23px;
+    line-height: 0.6;
+  }
+}
+
+.login__icon {
+  width: 13px;
+  height: 13px;
+  margin-right: 8px;
+  fill: currentColor;
+
+  @media (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 23px;
+    height: 23px;
+  }
+}

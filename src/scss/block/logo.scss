@@ -1,0 +1,94 @@
+.logo {
+  width: auto;
+
+  @media (min-width: $tablet) {
+    max-width: 380px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 489px;
+  }
+}
+
+.logo__wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logo__link {
+  transition: opacity 0.2s ease-in;
+  &:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in;
+  }
+  @media (min-width: $tablet) {
+    flex-shrink: 0;
+  }
+}
+
+.logo__image {
+  display: block;
+  width: 140px;
+  height: 47px;
+
+  @media (min-width: $tablet) {
+    width: 187px;
+    height: 63px;
+  }
+
+  @media (min-width: $laptop) {
+    width: 187px;
+    height: 38px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 241px;
+    height: 71px;
+  }
+}
+
+.logo__slogan {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 28px 25px 10px 34px;
+    font-size: 10px;
+    line-height: 1.4;
+    opacity: 0.9;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 15px;
+      width: 1px;
+      height: 62px;
+      background-color: $basic-color;
+      opacity: 0.5;
+
+      @media (min-width: $laptop) {
+        top: 13px;
+      }
+
+      @media (min-width: $desktop) {
+        top: 12px;
+        left: 18px;
+        height: 80px;
+      }
+    }
+  }
+
+  @media (min-width: $laptop) {
+    padding: 23px 25px 10px 34px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 23px 20px 10px 43px;
+    font-size: 14px;
+  }
+}

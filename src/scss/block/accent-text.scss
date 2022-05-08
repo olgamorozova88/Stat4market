@@ -1,0 +1,11 @@
+.accent-text {
+  color: $accent-color;
+  &--big {
+    font-size: 38px;
+    padding: 0 3px 0 4px;
+  }
+
+  &--logo {
+    color: $logo-accent-color;
+  }
+}
