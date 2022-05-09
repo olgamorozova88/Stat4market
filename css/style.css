@@ -87,6 +87,11 @@ a {
   padding: 17px 0;
 }
 
+.header__login {
+  margin-top: 18px;
+  margin-left: auto;
+}
+
 .header__toggle {
   display: flex;
   flex-direction: column;
@@ -154,11 +159,6 @@ a {
 .main-nav__link:hover {
   color: #cf51ce;
   transition: color 0.2s ease-in;
-}
-
-.login__wrapper {
-  margin-top: 18px;
-  margin-left: auto;
 }
 
 .login__button {
@@ -440,17 +440,21 @@ a {
     font-size: 20px;
   }
 
+  .header__logo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__login {
+    margin-top: 26px;
+  }
+
   .header__toggle {
     margin: 34px 0 0 80px;
   }
 
   .logo {
     max-width: 380px;
-  }
-
-  .logo__wrapper {
-    display: flex;
-    justify-content: space-between;
   }
 
   .logo__link {
@@ -481,10 +485,6 @@ a {
     height: 62px;
     background-color: #331a2f;
     opacity: 0.5;
-  }
-
-  .login__wrapper {
-    margin-top: 26px;
   }
 
   .login__button {
@@ -660,6 +660,16 @@ a {
     margin: 0 auto;
   }
 
+  .header__contacts {
+    margin-top: 26px;
+    margin-left: auto;
+  }
+
+  .header__login {
+    margin-left: 93px;
+    margin-top: 22px;
+  }
+
   .header__toggle {
     display: none;
   }
@@ -701,11 +711,6 @@ a {
     opacity: 0.9;
   }
 
-  .login__wrapper {
-    margin-left: 93px;
-    margin-top: 22px;
-  }
-
   .login__button {
     font-size: 18px;
     line-height: 2;
@@ -713,11 +718,6 @@ a {
 
   .contacts {
     display: block;
-  }
-
-  .contacts__wrapper {
-    margin-top: 26px;
-    margin-left: auto;
   }
 
   .contacts__phone {
@@ -863,6 +863,15 @@ a {
     padding: 23px 0;
   }
 
+  .header__contacts {
+    margin-top: 28px;
+  }
+
+  .header__login {
+    margin-left: 91px;
+    margin-top: 30px;
+  }
+
   .logo {
     max-width: 489px;
   }
@@ -892,11 +901,6 @@ a {
     margin-left: 7px;
   }
 
-  .login__wrapper {
-    margin-left: 91px;
-    margin-top: 30px;
-  }
-
   .login__button {
     padding: 11px 32px;
     font-size: 23px;
@@ -906,10 +910,6 @@ a {
   .login__icon {
     width: 23px;
     height: 23px;
-  }
-
-  .contacts__wrapper {
-    margin-top: 28px;
   }
 
   .contacts__phone {
