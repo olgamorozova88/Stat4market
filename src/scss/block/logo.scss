@@ -10,13 +10,6 @@
   }
 }
 
-.logo__wrapper {
-  @media (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .logo__link {
   transition: opacity 0.2s ease-in;
   &:hover {

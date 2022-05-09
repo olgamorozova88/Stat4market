@@ -8,6 +8,43 @@
   }
 }
 
+.header__logo {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__contacts {
+  @media (min-width: $laptop) {
+    margin-top: 26px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 28px;
+  }
+}
+
+.header__login {
+  margin-top: 18px;
+  margin-left: auto;
+
+  @media (min-width: $tablet) {
+    margin-top: 26px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-left: 93px;
+    margin-top: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 91px;
+    margin-top: 30px;
+  }
+}
+
 .header__toggle {
   display: flex;
   flex-direction: column;

@@ -6,17 +6,6 @@
   }
 }
 
-.contacts__wrapper {
-  @media (min-width: $laptop) {
-    margin-top: 26px;
-    margin-left: auto;
-  }
-
-  @media (min-width: $desktop) {
-    margin-top: 28px;
-  }
-}
-
 .contacts__phone {
   transition: color 0.2s ease-in;
 
